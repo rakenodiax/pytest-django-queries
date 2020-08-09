@@ -34,6 +34,7 @@ def save_results_to_json(save_path, backup_path, data):
 
     with open(save_path, "w") as fp:
         json.dump(data, fp, indent=2)
+        fp.write("\n")
 
 
 def add_entry(request, queries, dirout):
